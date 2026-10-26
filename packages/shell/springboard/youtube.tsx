@@ -1,4 +1,4 @@
-import { Screen, Text, Title } from '@doan-labs/duo-uikit'
+import { Screen, Text } from '@doan-labs/duo-uikit'
 import type { Os } from '@doan-labs/duo-sdk'
 import * as stylex from '@stylexjs/stylex'
 import { useState, type FormEvent } from 'react'
@@ -49,7 +49,7 @@ const YouTubePlayer = ({ video, onClose }: { video: Video; onClose: () => void }
   </div>
 )
 
-export const YouTube = ({ os }: { os: Os }) => {
+export const YouTube = (_props: { os: Os }) => {
   const [query, setQuery] = useState('')
   const [filter, setFilter] = useState('All')
   const [playing, setPlaying] = useState<Video | null>(null)
