@@ -18,6 +18,7 @@ import { Settings } from '@doan-labs/duo-app-settings/index.tsx'
 import { Shortcuts } from '@doan-labs/duo-app-shortcuts/index.tsx'
 import { Siri } from '@doan-labs/duo-app-siri/index.tsx'
 import { Tv } from '@doan-labs/duo-app-tv/index.tsx'
+import { YouTube } from './springboard/youtube.tsx'
 import type { SettingsHost } from '@doan-labs/duo-sdk'
 import type { App } from '@doan-labs/duo-uikit/app.ts'
 import { createElement } from 'react'
@@ -56,6 +57,7 @@ export const LEFT: App[] = [
   { name: 'Notes', id: 'labs.doan.ipduo.notes', light: true, ...RELEASE },
   { name: 'Maps', id: 'labs.doan.ipduo.maps', light: true, edge: true, ...RELEASE },
   { name: 'TV', mock: true, view: Tv },
+  { name: 'YouTube', view: YouTube },
   { name: 'News', id: 'labs.doan.ipduo.news', light: true, ...RELEASE },
   { name: 'Health', id: 'labs.doan.ipduo.health', light: true, ...RELEASE },
   { name: 'Wallet', id: 'labs.doan.ipduo.wallet', light: true, ...RELEASE },
