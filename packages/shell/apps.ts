@@ -57,7 +57,7 @@ export const LEFT: App[] = [
   { name: 'Notes', id: 'labs.doan.ipduo.notes', light: true, ...RELEASE },
   { name: 'Maps', id: 'labs.doan.ipduo.maps', light: true, edge: true, ...RELEASE },
   { name: 'TV', mock: true, view: Tv },
-  { name: 'YouTube', view: YouTube },
+  { name: 'YouTube', icon: '/icons/youtube.svg', view: YouTube },
   { name: 'News', id: 'labs.doan.ipduo.news', light: true, ...RELEASE },
   { name: 'Health', id: 'labs.doan.ipduo.health', light: true, ...RELEASE },
   { name: 'Wallet', id: 'labs.doan.ipduo.wallet', light: true, ...RELEASE },
