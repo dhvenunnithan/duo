@@ -1,4 +1,4 @@
-import { app, colors, radius, weight } from '@doan-labs/duo-uikit/tokens.stylex.ts'
+import { app, radius, weight } from '@doan-labs/duo-uikit/tokens.stylex.ts'
 import * as stylex from '@stylexjs/stylex'
 
 export const styles = stylex.create({
@@ -38,6 +38,7 @@ export const styles = stylex.create({
   backButton: { border: 0, backgroundColor: 'transparent', color: app.fg, fontSize: 31, cursor: 'pointer', lineHeight: 1 },
   playerSpacer: { flex: 1 },
   playerFrame: { width: '100%', aspectRatio: '16/9', backgroundColor: 'black', flexShrink: 0 },
+  playerIframe: { display: 'block', width: '100%', height: '100%', border: 0 },
   playerDetails: { padding: 14, color: app.fg },
   videoTitle: { margin: 0, fontSize: 17, lineHeight: 1.35, fontWeight: weight.bold },
   channelRow: { display: 'flex', alignItems: 'center', gap: 10, marginTop: 16, marginBottom: 14 },
