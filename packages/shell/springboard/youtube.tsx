@@ -28,6 +28,7 @@ const YouTubePlayer = ({ video, onClose }: { video: Video; onClose: () => void }
     <div {...stylex.props(styles.playerFrame)}>
       <iframe
         title={video.title}
+        {...stylex.props(styles.playerIframe)}
         src={`https://www.youtube-nocookie.com/embed/${video.id}?autoplay=1&playsinline=1&rel=0`}
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
         allowFullScreen
